@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<div class="container" id="content_contact">
+    <h1>Liên hệ TaHiTuKi</h1>
+    <div class="col-md-6">
+        <p> Chúng tôi rất trân trọng mọi ý kiến đóng góp gửi về cho chúng tôi. <br>
+            Ý kiến đóng góp có thể bày tỏ mong muốn một chức năng, một loại tỷ giá... nào đó mà bạn cho rằng bạn cần.
+            Chân thành cảm ơn bạn đã sử dụng.
+        </p>
+        
+        <form action="http://${pageContext.request.serverName}:${pageContext.request.serverPort}/TyGiaVang-war/ContactServlet" method="get">
+            <div class="row">
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" name="name" placeholder="Nhâp tên" required />
+                </div>
+
+                <div class="col-sm-5">
+                    <input type="email" class="form-control" name="email" placeholder="Nhâp email" required />
+                </div>
+            </div>
+
+            <br/>
+
+            <textarea class="span12 form-control" rows="5" name='content' placeholder="Nhập nội dung" required></textarea>
+
+            <br/>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    
+    <div class="col-md-3">
+        <address>
+            <p>Địa chỉ: Trường ĐH Công Nghệ Thông Tin, Thủ Đức, TP.HCM</p>
+            <p>Email: tahitu@gmail.com</p>
+        </address>
+    </div>
+</div>

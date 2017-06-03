@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<h1>ĐĂNG NHẬP TÀI KHOẢN</h1>
+
+<div class="row">
+    <div class="col-xs-6">
+        <h3>Khách hàng mới</h3>
+        <hr>
+        <a href="register.jsp">Đăng ký tài khoản</a>
+        <p>Bằng cách tạo tài khoản bạn có thể mua sắm nhanh hơn, cập nhật tình trạng đơn hàng, theo dõi những đơn hàng đã đặt và đặc biệt là sẽ được hưởng nhiều chương trình ưu đãi!</p>
+    </div>
+    
+    <div class="col-xs-6">
+        <h3>Khách hàng cũ</h3>
+        <hr>
+        <p>Tôi là khách hàng cũ</p>
+        <form role="form" method="POST" action="LoginClientServlet">
+            <div class="form-group">
+                <label>Địa chỉ Email:</label>
+                <input type="email" name="email" class="form-control" placeholder="Email" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Password:</label>
+                <input type="password" name="password" class="form-control" placeholder="Password" required>
+            </div>
+            
+           <input type="submit" value="Login" class="btn btn-info" required/>
+        </form>
+    </div>
+</div>

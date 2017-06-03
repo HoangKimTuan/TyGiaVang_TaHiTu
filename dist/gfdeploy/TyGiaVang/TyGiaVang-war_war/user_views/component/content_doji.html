@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<h1 class="h-head">Giá vàng DOJI Việt Nam <small>- Cập nhật lúc {{updated}}</small></h1>
+<span class="unit"> (nghìn đồng/lượng)</span>
+
+<table class="table table-bordered table-hover">
+    <thead class="table-head">
+        <tr>
+            <th>Thành phố</th>
+            <th>Loại</th>
+            <th>Mua vào</th>
+            <th>Bán ra</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr ng-repeat="dt in doji.data">
+            <td><strong>{{dt.city}}</strong></td>
+            <td><strong>{{dt.type}}</strong></td>
+            <td>{{dt.buy}}</td>
+            <td>{{dt.sell}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Giới thiệu về Tập đoàn Vàng Bạc Đá Quý DOJI</h2>
+<p>Tập đoàn Vàng Bạc Đá Quý DOJI (DOJI) được thành lập ngày 28/07/1994.</p>
+<p>Tập đoàn DOJI đã tạo một dấu ấn mạnh mẽ trong cộng đồng doanh nghiệp Việt Nam nói chung và trong lĩnh vực vàng bạc đá quý nói riêng. Với tốc độ tăng trưởng doanh thu ấn tượng và giá trị thương hiệu ngày càng lớn mạnh. Chiếm lĩnh thị trường nội địa với hệ thống kinh doanh Vàng miếng, phân phối Kim cương và trang sức cao cấp khắp ba miền Bắc – Trung – Nam. Thương hiệu DOJI đang bước đi vững chãi trong lộ trình chinh phục khách hàng bằng uy tín và chất lượng sản phẩm. Luôn chú trọng đầu tư thiết bị và công nghệ sản xuất, Tập đoàn DOJI thể hiện nhiều lợi thế cạnh tranh so với các sản phẩm cùng phân khúc và thành danh với các thương hiệu nổi tiếng như: Trang sức Kim cương Diamond House, Trang sức Đá màu Gems City, Trang sức Cưới Wedding Land, Trang sức Bạc Silver d’amour, Trang sức Vàng ta Lộc Phát Tài.</p>
+<p>Với tầm nhìn chiến lược, quan điểm phát triển bền vững, tiềm lực hùng mạnh, Tập đoàn DOJI khẳng định đẳng cấp thương hiệu quốc gia Việt Nam, sẵn sàng tâm thế hội nhập và vươn xa trong khu vực cũng như quốc tế trong tương lai.</p>
+<p>Xem thêm tại <a href="http://doji.vn" target="_blank" rel="nofollow" title="Website DOJI">http://doji.vn</a></p>

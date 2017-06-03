@@ -1,0 +1,41 @@
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<div class="evolution">
+<div class="update-ribon">Diễn biến mới nhất</div>
+    <span class="update-ribon-right"></span>
+    <div class="update-right-border"><a href="http://${pageContext.request.serverName}:${pageContext.request.serverPort}/TyGiaVang-war/" class="hiddenLink" title="Tổng hợp giá vàng SJC cả nước">Tổng hợp giá vàng SJC trên toàn quốc Hôm Nay</a></div>
+</div>
+
+<div>
+    <h1 class="section-head">Tổng hợp Giá vàng trên Toàn Quốc <small> - Cập nhật lúc {{updated}}</small></h1>
+    <span class="unit"> (nghìn đồng/lượng)</span>
+    <table class="table table-bordered table-hover">
+        <thead class="table-head">
+            <tr>
+                <th>Thành phố</th>
+                <th>Hệ thống</th>
+                <th>Mua vào</th>
+                <th>Bán ra</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr ng-repeat="dt in gold.data">
+                <td><strong>{{dt.city}}</strong></td>
+                <td><a href="#" title="{{dt.type}}"><strong>{{dt.system}}</strong></a></td>
+                <td>{{dt.buy}}</td>
+                <td>{{dt.sell}}</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <i class="footer-table">Nguồn: Tổng hợp, so sánh giá vàng SJC 1 Lượng trên Toàn Quốc</i>
+</div>
+
+<br/>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<h1 class="h-head">Giá vàng SJC Việt Nam <small>- Cập nhật lúc {{updated}}</small></h1>
+<span class="unit"> (nghìn đồng/lượng)</span>
+
+<table class="table table-bordered table-hover">
+    <thead class="table-head">
+        <tr>
+            <th>Thành phố</th>
+            <th>Loại</th>
+            <th>Mua vào</th>
+            <th>Bán ra</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr ng-repeat="dt in sjc.data">
+            <td><strong>{{dt.city}}</strong></td>
+            <td><strong>{{dt.type}}</strong></td>
+            <td>{{dt.buy}}</td>
+            <td>{{dt.sell}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Giới thiệu về Công Ty TNHH Một Thành Viên Vàng Bạc Đá Quý Sài Gòn – SJC</h2>
+<p>Được thành lập năm 1988, là doanh nghiệp nhà nước trực thuộc UBND TP.HCM. Hoạt động theo mô hình công ty mẹ – con như một tập đoàn kinh doanh đa ngành. Trong đó sản xuất, kinh doanh vàng và trang sức là ngành kinh doanh chính, địa ốc, đầu tư tài chính và dịch vụ.</p>
+<p>SJC định hướng phát triển thành một tập đoàn kinh tế đầu ngành của quốc gia trong vòng vài năm tới, phát triển ngành kinh doanh vàng và trang sức với nền tảng một thương hiệu quốc gia để trở thành thương hiệu quốc tế. Mạng lưới kinh doanh phân phối gồm hơn 200 cửa hàng, 43 đại lý chính thức, trên 3.000 cửa hàng liên kết bán lẻ toàn quốc. Bên cạnh đó, SJC còn có một xí nghiệp sản xuất nữ trang tập trung, xuất xưởng hơn 500.000 sản phẩm một năm.</p>
+<p>Thương hiệu SJC đã đi vào tâm trí của khách hàng là sản phẩm của niềm tin, uy tín, chất lượng. Xứng đáng là danh hiệu thương hiệu Quốc gia, sản phẩm SJC đa dạng với nhiều chủng loại từ phổ thông đến cao cấp, được chia làm 2 dòng sản phẩm: dòng phổ thông nữ trang SJC và dòng nữ trang cao cấp SJC Diagold. Dòng phổ thông nữ trang SJC có nhiều mẫu mã độc đáo, thời trang từ công nghệ đúc, đột dập, kết dây, khắc máy… Đặc biệt giá tiền vừa phải phù hợp với nhiều đối tượng khách hàng và đáp ứng được nhu cầu của các cửa hàng đại lý tại các tỉnh trong cả nước.</p>
+<p>Các sản phẩm nữ trang SJC đáp ứng đầy đủ các tiêu chuẩn theo yêu cầu của Thông tư 22 về việc quản lý đo lường trong kinh doanh vàng và quản lý chất lượng vàng trang sức, mỹ nghệ lưu thông trên thị trường với khả năng đáp ứng số lượng lớn và nhanh chóng. Khách hàng khi mua sản phẩm nữ trang SJC hoàn toàn yên tâm về uy tín và chất lượng sản phẩm, cộng với chế độ hậu mãi tốt. SJC được đánh giá cao trong nước và trong khu vực: Danh hiệu Thương hiệu Quốc gia, đứng thứ 4 trong 500 Doanh nghiệp lớn nhất Việt Nam, giải Vàng Top 500 nhà bán lẻ hàng đầu châu Á – Thái Bình Dương…., cùng nhiều giải thưởng cao quý khác.</p>
+<p>Xem thêm tại <a href="http://www.sjc.com.vn" target="_blank" rel="nofollow" title="SJC Việt Nam">http://sjc.com.vn</a></p>
